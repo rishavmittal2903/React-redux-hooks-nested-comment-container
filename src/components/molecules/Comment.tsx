@@ -88,11 +88,11 @@ const Comment = (props: IProps) => {
             )}
           </div>
           <div>
-            {/* {accessPolicy?.canDelete && loggedUserId === id && ( */}
+            {accessPolicy?.canDelete && loggedUserId === id && (
               <CustomButton onClick={deletePostHandler}>
                 <DeleteIcon />
               </CustomButton>
-            {/* )} */}
+            )}
             {accessPolicy?.canShare && loggedUserId === id && (
               <CustomButton>
                 <ShareIcon />
